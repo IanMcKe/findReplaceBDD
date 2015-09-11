@@ -16,6 +16,10 @@ describe('findReplace', function() {
     });
 
     it('handles replacement of multiple punctuation', function() {
-        expect(findReplace('hello!!! hello!!! hello!!!', '!!!', '!')).to.equal('hello! hello! hello!');
+        expect(findReplace('hello... hello... hello...', '...', '!')).to.equal('hello! hello! hello!');
+    });
+
+    it('does something', function() {
+        expect(findReplace('hello world', 'World', 'World')).to.equal('hello World');
     });
 });
