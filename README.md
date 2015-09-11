@@ -11,7 +11,7 @@ Setup
 ```console
 $ git clone https://github.com/IanMcKe/findReplaceBDD.git
 ```
-* Open HTML file in browser
+* Open the `findAndReplace.html` file in your browser
 
 Technologies Used
 ----------
