@@ -10,4 +10,8 @@ describe('findReplace', function() {
     it('replaces all instances of a word even if it has capitals or not', function() {
         expect(findReplace('hello World world', 'world', 'Gerald')).to.equal('hello Gerald Gerald');
     });
+
+    it('handles replacement of punctuation', function() {
+        expect(findReplace('hello world world.', '.', 'Gerald')).to.equal('hello world worldGerald');
+    });
 });
