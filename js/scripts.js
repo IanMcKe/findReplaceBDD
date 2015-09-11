@@ -7,3 +7,14 @@ var findReplace = function(string, word, newWord) {
 
     return result;
 };
+
+$(document).ready(function() {
+    $("form#findReplace").submit(function(event) {
+        var result = findReplace($("input#string").val(), $("input#word").val(), $("input#newWord").val());
+
+        $(".findReplace").text(result);
+
+        $("#result").show();
+        event.preventDefault();
+    });
+});
