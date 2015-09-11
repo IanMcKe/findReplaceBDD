@@ -12,14 +12,10 @@ describe('findReplace', function() {
     });
 
     it('handles replacement of punctuation', function() {
-        expect(findReplace('hello world world.', '.', 'Gerald')).to.equal('hello world worldGerald');
+        expect(findReplace('hello world world.', '.', '!')).to.equal('hello world world!');
     });
 
     it('handles replacement of multiple punctuation', function() {
         expect(findReplace('hello... hello... hello...', '...', '!')).to.equal('hello! hello! hello!');
-    });
-
-    it('does something', function() {
-        expect(findReplace('hello world', 'World', 'World')).to.equal('hello World');
     });
 });
