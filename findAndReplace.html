@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/yeti/bootstrap.min.css'>
+        <link rel='stylesheet' href="css/styles.css">
+        <script src='js/jquery-1.11.3.js'></script>
+        <script src='js/scripts.js'></script>
+        <title>Find and Replace</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Find and Replace</h1>
+            <form id="findReplace">
+                <div class="form-group">
+                    <label for="string">Enter what sentence you would like to replace a word from:</label>
+                    <input id="string" type="text" class="form-control" REQUIRED>
+                    <label for="word">Enter the word you'd like to replace:</label>
+                    <input id="word" type="text" class="form-control">
+                    <label for="newWord">Enter your replacement:</label>
+                    <input id="newWord" type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Find and Replace</button>
+            </form>
+
+        <br>
+
+        <div id="result" class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Replaced!</h3>
+            </div>
+            <div class="panel-body">
+                <span class="findReplace"></span>
+            </div>
+        </div>
+    </body>
+</html>
